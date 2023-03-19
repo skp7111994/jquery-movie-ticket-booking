@@ -19,18 +19,25 @@
                         "location": "Cherry Hill, NJ",
                         "showTimes": [
                             "8:00am",
-                            "11:00am",
-                            "2:00pm",
                             "5:00pm",
                             "8:00pm",
                             "11:00pm"
+                        ]
+                    },
+                    {
+                        "name": "Regal Cinemas Springfield Town Center 12",
+                        "location": "Springfield, VA",
+                        "showTimes": [
+                            "6:00pm",
+                            "9:00pm",
+                            "12:00am"
                         ]
                     }
                 ],
                 "cast": [
                     {
                         "name": "Donald Glover",
-                        "image": "https://m.media-amazon.com/images/M/MV5BZjNhYjYzMjEtZGQzNS00MjhkLTg0YmItZjRkZmQ2M2QxOGMzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY317_CR6,0,214,317_AL_.jpg",
+                        "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcS8PyfEyfs-OLd-wViCCBmjUx1Ex1Rfy7rFBOZNahTRMjOpNN_bJuEaKdHw1Mhk-9Wdd3r30fSUf4H--LY&psig=AOvVaw3G3myWaVr9JDuK4UVPUwvB&ust=1679329785154000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLDonIy16P0CFQAAAAAdAAAAABAE",
                         "role": "Simba"
                     }
                 ],
@@ -71,7 +78,7 @@
                 "cast": [
                     {
                         "name": "Roy Scheider",
-                        "image": "https://m.media-amazon.com/images/M/MV5BODQ3Mjk3NTU1M15BMl5BanBnXkFtZTcwNjUxNzE1MQ@@._V1_UY317_CR20,0,214,317_AL_.jpg",
+                        "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft1.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcTxdvkKrq7mi-gAATOv-bY6qXcQeeMKFGx7_Xqq6JaOwRUKReI3561K3j3-Y-5XXLdy6STPxSeTvqtX6Ok&psig=AOvVaw0kEH11sPfPOV1-b2QtCX7R&ust=1679329864497000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCZiLK16P0CFQAAAAAdAAAAABAE",
                         "role": "Chief Martin Brody"
                     }
                 ],
@@ -100,19 +107,39 @@
                         "name": "Cinemark at The Pike",
                         "location": "Long Beach, CA",
                         "showTimes": [
-                            "8:30am",
-                            "11:30am",
-                            "2:30pm",
                             "5:30pm",
                             "8:30pm",
                             "11:30pm"
+                        ]
+                    },
+                    {
+                        "name": "Regal Cinemas Springfield Town Center 12",
+                        "location": "Springfield, VA",
+                        "showTimes": [
+                            "9:00am",
+                            "12:00pm",
+                            "3:00pm",
+                            "6:00pm",
+                            "12:00am"
+                        ]
+                    },
+                    {
+                        "name": "AMC Loews Lincoln Square 13",
+                        "location": "New York, NY",
+                        "showTimes": [
+                            "7:00am",
+                            "10:00am",
+                            "1:00pm",
+                            "4:00pm",
+                            "7:00pm",
+                            "10:00pm"
                         ]
                     }
                 ],
                 "cast": [
                     {
                         "name": "Marlon Brando",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjMwNDA4Nl5BMl5BanBnXkFtZTcwMTA5Mzg3OA@@._V1_UY317_CR3,0,214,317_AL_.jpg",
+                        "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft2.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcTwfXu4LmzfpCueDJW0LzILaIbco5nvEKZqNPnIM4mAlkYQWEnWMRDACAyuUzyxJ1OHL-BFGtLXW_ePI58&psig=AOvVaw1CgiCN83vQZ9piGcAVYVt7&ust=1679329889382000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMiE-L216P0CFQAAAAAdAAAAABAE",
                         "role": "Don Vito Corleone"
                     }
                 ],
@@ -121,6 +148,18 @@
                         "title": "A Timeless Classic",
                         "description": "The Godfather is a must-see movie that stands the test of time as one of the greatest films of all time.",
                         "user": "John Smith",
+                        "rating": "5"
+                    },
+                    {
+                        "title": "A Masterpiece",
+                        "description": "The Godfather is a masterpiece of film-making and a true classic that will be admired for generations to come.",
+                        "user": "Jane Doe",
+                        "rating": "4"
+                    },
+                    {
+                        "title": "A Classic",
+                        "description": "The Godfather is a classic that is essential viewing for any movie fan. Its story and characters will stay with you long after you've seen it.",
+                        "user": "Andrew Johnson",
                         "rating": "5"
                     }
                 ]
@@ -152,7 +191,7 @@
                 "cast": [
                     {
                         "name": "Tim Robbins",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTI1OTYxNzAxOF5BMl5BanBnXkFtZTYwNTE5ODI4._V1_UY317_CR16,0,214,317_AL_.jpg",
+                        "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft0.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcQxHVb4CkGuntaMyUhH42pXRaYT_q-dlPoVaqSnY0fLOMGBQJLgSd2qsJNaeAzEQCbx9iCqfh5R2dPxl9A&psig=AOvVaw1HhtUzEe2yQgu9BXhK9OSi&ust=1679329917743000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMi9u8u16P0CFQAAAAAdAAAAABAE",
                         "role": "Andy Dufresne"
                     }
                 ],
@@ -189,12 +228,34 @@
                             "7:30pm",
                             "10:30pm"
                         ]
+                    },
+                    {
+                        "name": "Cinema 9",
+                        "location": "New York, NY",
+                        "showTimes": [
+                            "09:00am",
+                            "11:00am",
+                            "01:00pm"
+                        ]
+                    },
+                    {
+                        "name": "Movie Theater 4",
+                        "location": "New York City",
+                        "showTimes": [
+                            "10:00AM",
+                            "12:00PM",
+                            "2:00PM",
+                            "4:00PM",
+                            "6:00PM",
+                            "8:00PM",
+                            "10:00PM"
+                        ]
                     }
                 ],
                 "cast": [
                     {
                         "name": "Christian Bale",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTkxMzk4MjQ4Nl5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_UY317_CR16,0,214,317_AL_.jpg",
+                        "image": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQ3QoqPiaFEke2tZ2ESPr_ykcOx4ztl6j7FHhGiN0N2GHHLNr6qQx1rpUZqoo-g0_9Faolpd0WJwwmO7pY",
                         "role": "Bruce Wayne/Batman"
                     }
                 ],
@@ -235,7 +296,7 @@
                 "cast": [
                     {
                         "name": "John Travolta",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTQyMTczMTAxMl5BMl5BanBnXkFtZTcwOTg2OTM2MQ@@._V1_UY317_CR22,0,214,317_AL_.jpg",
+                        "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-498386018.jpg",
                         "role": "Vincent Vega"
                     }
                 ],
@@ -278,7 +339,7 @@
                 "cast": [
                     {
                         "name": "Joaquin Phoenix",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTUzODQ2NzQ2MV5BMl5BanBnXkFtZTgwOTQ2NDI2NjM@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Joaquin_Phoenix_in_2018.jpg/330px-Joaquin_Phoenix_in_2018.jpg",
                         "role": "The Joker"
                     }
                 ],
@@ -317,7 +378,7 @@
                 "cast": [
                     {
                         "name": "Kristen Bell",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTg3MzM3MDY3OV5BMl5BanBnXkFtZTgwNTA2NjMzMjE@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Kristen_Bell_Paris_Fashion_Week_Spring_Summer_2020_%28cropped%29.jpg/1200px-Kristen_Bell_Paris_Fashion_Week_Spring_Summer_2020_%28cropped%29.jpg",
                         "role": "Anna"
                     }
                 ],
@@ -356,7 +417,7 @@
                 "cast": [
                     {
                         "name": "Robert Downey Jr.",
-                        "image": "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYyN15BMl5BanBnXkFtZTcwNTk0MTU0Mw@@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg",
+                        "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft2.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcQijI6Sf7U-nKAfhHFmFBhVVVIxOfzI3QBeHqEjXJ7qcqbu98eqykx0UdmHrvt9Wx5hKilfZROD0mR85gk&psig=AOvVaw3Rlc36dm3Vgi6mrBGeSDT2&ust=1679330029830000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJCP9IC26P0CFQAAAAAdAAAAABAE",
                         "role": "Iron Man"
                     }
                 ],
@@ -399,7 +460,7 @@
                 "cast": [
                     {
                         "name": "Tom Hanks",
-                        "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjMwNDA0Nl5BMl5BanBnXkFtZTcwMTA2NDY3NQ@@._V1_UY317_CR16,0,214,317_AL_.jpg",
+                        "image": "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft1.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcQaMZTWnBKqkR9bWNDh6TD_HZkSIIWtz265agrRvyzxfCwEL2_-n34fDPVgm1j6kWLsDv6gJoeumtNRgfg&psig=AOvVaw2mCwlQiX7El4htAN7b1Rg0&ust=1679330075037000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJihuZa26P0CFQAAAAAdAAAAABAE",
                         "role": "Woody"
                     }
                 ],

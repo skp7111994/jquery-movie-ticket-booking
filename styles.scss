@@ -12,6 +12,36 @@
   padding: 1rem;
 }
 
+#movie-details-seat-booking {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+#movie-details-seat-booking div {
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 0.25rem;
+}
+
+#movie-details-seat-booking div:last-child {
+  border-bottom-color: transparent;
+}
+
+#booking-summary {
+  display: grid;
+  place-items: center;
+}
+
+#booking-summary .movie-details-seat-booking {
+  width: 25%;
+  gap: 0.3rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #212529;
+}
+
 .form-select {
   width: auto !important;
 }
@@ -27,7 +57,7 @@ button {
 }
 
 .movie-card-width {
-  //width: 200px;
+  //width: 20%;
 }
 
 .cursor-pointer {
@@ -57,6 +87,16 @@ button {
   padding: 1rem;
 }
 
+section.theatre {
+  margin: 1rem 0;
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 1rem;
+}
+
+.theatre:last-child {
+  border: none;
+}
+
 .review-description {
   font-style: italic;
   color: rgba(0, 0, 0, 0.6);
@@ -82,9 +122,12 @@ button {
 
 .cast-section,
 .movies-section,
-.book-tickets-btn {
+.book-tickets-btn,
+.reviews-header {
   margin: 1.5rem 0;
 }
+
+.reviews-section {}
 
 .cast-section img {
   height: 5rem;
@@ -188,6 +231,7 @@ time {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  font-size: 1.2rem;
 }
 
 .showcase li {
@@ -223,7 +267,9 @@ time {
   margin: 1rem 0;
 }
 
-
+.gap-4 {
+  gap: 4rem;
+}
 /*-----carousel css starts here---------*/
 
 ._slider {

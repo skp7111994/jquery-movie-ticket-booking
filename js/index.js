@@ -1,6 +1,6 @@
 // import * as $ from 'jquery';
 import { currentMovies, upcomingMovies } from '../mock-data/data.json';
-import * as $ from '../jquery.min';
+import * as $ from 'jquery';
 
 $(() => {
     const main = $('#main');
@@ -16,8 +16,15 @@ $(() => {
         return Math.ceil(Math.random() * 10) % 2 === 0 ? 'occupied' : '';
     }
 
-    const proceedToPayment = () => {
-
+    const proceedToSummary = (movieObj, movieDetailsEl) => {
+        main.empty();
+        const summary = $('<section>', {class: 'booking-summary'}).attr({'id': 'booking-summary'});
+        const ticketStr = Object.keys(bookedTickets).join(', ');
+        movieDetailsEl.prepend($('<img>', {src: movieObj.poster}));
+        movieDetailsEl.append($('<div>', {text: ticketStr}));
+        summary.append($('<h4>', {text: 'Booking Successful!', class: 'booking-successful'}));
+        summary.append(movieDetailsEl);
+        main.append(summary);
     }
 
     const selectTickets = (e) => {
@@ -37,11 +44,17 @@ $(() => {
         }
     }
 
-    const seatSelection = (movie, showTime) => {
+    const seatSelection = (movieObj) => {
         main.empty();
+        const { name: movieName, rating, theatre, location, showTime, language } = movieObj;
+        const movieDetailsOnSeatBookingPage = $('<section>', { class: 'movie-details-seat-booking checkout-section' }).attr({id: 'movie-details-seat-booking'});
         const ticketSection = $('<section>', { class: 'ticket-section' });
         const screenSection = $('<section>', { class: 'screen-section' });
-        const checkoutBtn = $('<button>', { text: 'Checkout', class: 'btn'});
+        const movieAndRatingEl = $('<div>', { text: `${movieName}(${rating})` });
+        const languageEl = $('<div>', {text: language});
+        const theatreAndLocationEl = $('<div>', { text: `${theatre}, ${location} | ${showTime}` });
+        movieDetailsOnSeatBookingPage.append(movieAndRatingEl, languageEl, theatreAndLocationEl);
+        const checkoutBtn = $('<button>', { text: 'Checkout', class: 'btn' }).on('click', () => proceedToSummary(movieObj, movieDetailsOnSeatBookingPage));
         const checkoutSection = $('<section>', { class: 'checkout-section hide' }).append(checkoutBtn)
         const screen = $('<section>', { class: 'screen' });
         const screenText = $('<article>', { text: 'Eyes this way!' });
@@ -73,16 +86,17 @@ $(() => {
             }
         });
         showcase.append(seatNA, seatSelected, seatOccupied);
-        main.append(showcase, ticketSection, screenSection, checkoutSection);
+        main.append(movieDetailsOnSeatBookingPage, showcase, ticketSection, screenSection, checkoutSection);
     }
     const bookTickets = (movieId) => {
         main.empty();
-        const sectionHeader = $('<h4>', { text: 'Now running at:', class: 'book-tickets-section-header' });
-        const theatreSection = $('<section>').append(sectionHeader);
+        // const sectionHeader = $('<h4>', { text: 'Now running at:', class: 'book-tickets-section-header' });
+        const theatreSection = $('<section>')
         const movie = currentMovies.data[movieId - 1];
         const { nowRunningAt } = movie;
-        nowRunningAt.forEach(({ name, location, showTimes }) => {
-            const theatreEl = $('<section>');
+        nowRunningAt.forEach((theatre) => {
+            const { name, location, showTimes } = theatre;
+            const theatreEl = $('<section>', { class: 'theatre' });
             const theatreNameEl = $('<h5>');
             const locationEl = $('<h6>');
             const showTimesEl = $('<section>', { class: 'showtimes-section' });
@@ -91,7 +105,7 @@ $(() => {
             showTimes.forEach(showTime => {
                 const time = $('<time>');
                 time.text(showTime);
-                time.on('click', () => seatSelection(movie, showTime));
+                time.on('click', () => seatSelection({ ...movie, rating: movie.rating, theatre: name, location, showTime }));
                 showTimesEl.append(time);
             })
             theatreEl.append(theatreNameEl, locationEl, showTimesEl);
@@ -107,8 +121,8 @@ $(() => {
         const title = $('<h4>');
         const description = $('<div>');
         const castSection = $('<section>');
-        const reviewsSection = $('<section>', {class: 'd-flex'});
-        const bookTicketsBtn = $('<button>', {class: 'btn book-tickets-btn'});
+        const reviewsSection = $('<section>', { class: 'd-flex gap-4' });
+        const bookTicketsBtn = $('<button>', { class: 'btn book-tickets-btn' });
         const language = $('<div>', {
             text: movie.language
         }).addClass('badge bg-secondary')
@@ -127,13 +141,13 @@ $(() => {
             castDetails.append(img, name, role, castDetails);
             castSection.append(castDetails);
         });
-        const reviewHeadingEl = $('<h4>', {text: 'Reviews'});
-        movie.reviews.forEach(({title, description, user, rating}) => {
-            const reviewEl = $('<section>', {class: 'review-card'});
-            const titleEl = $('<h6>', {text: title, class: 'text-align-center'});
-            const descriptionEl = $('<p>', {text: description, class: 'review-description'});
-            const userEl = $('<div>', {text: user, class: 'review-user'});
-            const ratingEl = $('<p>', {text: `★`.repeat(Number(rating)), class: 'star-enabled text-align-center'});
+        const reviewHeadingEl = $('<h4>', { text: 'Reviews', class: 'reviews-header' });
+        movie.reviews.forEach(({ title, description, user, rating }) => {
+            const reviewEl = $('<section>', { class: 'review-card' });
+            const titleEl = $('<h6>', { text: title, class: 'text-align-center' });
+            const descriptionEl = $('<p>', { text: description, class: 'review-description' });
+            const userEl = $('<div>', { text: user, class: 'review-user' });
+            const ratingEl = $('<p>', { text: `★`.repeat(Number(rating)), class: 'star-enabled text-align-center' });
             reviewEl.append(titleEl, ratingEl, descriptionEl, userEl);
             reviewsSection.append(reviewEl);
         })
@@ -143,7 +157,7 @@ $(() => {
         castSection.addClass('cast-section');
         movieInfo.append(title, language, description, bookTicketsBtn);
         movieDetails.append(poster, movieInfo);
-        movieSection.append(movieDetails, castSection,reviewHeadingEl, reviewsSection);
+        movieSection.append(movieDetails, castSection, reviewHeadingEl, reviewsSection);
         if (notClickable) {
             bookTicketsBtn.addClass('hide');
             reviewHeadingEl.addClass('hide');
@@ -200,26 +214,23 @@ $(() => {
     }
     appendMovieList(currentMovies.data, nowPlaying);
     appendMovieList(upcomingMovies.data, upcoming, true);
-
-
-    
 });
 
 $(document).ready( ($) => {
     var slideCount = $('._slider ul li').length;
-	var slideWidth = $('._slider ul li').width();
-	var slideHeight = $('._slider ul li').height();
+    var slideWidth = $('._slider ul li').width();
+    var slideHeight = $('._slider ul li').height();
 
     slideWidth = '100%';
     slideHeight = '500px';
-	var sliderUlWidth = slideCount * slideWidth;
-	
-	$('._slider.nowPlaying').css({ width: slideWidth, height: slideHeight });	
-	$('._slider.nowPlaying ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+    var sliderUlWidth = slideCount * slideWidth;
+    
+    $('._slider.nowPlaying').css({ width: slideWidth, height: slideHeight });	
+    $('._slider.nowPlaying ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 
     $('._slider.upcoming').css({ width: slideWidth, height: slideHeight });	
-	$('._slider.upcoming ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
+    $('._slider.upcoming ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+    
     $('._slider.nowPlaying ul li:last-child').prependTo('._slider.nowPlaying ul');
     $('._slider.upcoming ul li:last-child').prependTo('._slider.upcoming ul');
   
@@ -261,4 +272,4 @@ $(document).ready( ($) => {
         return false;
     });
   
-  });  
+  }); 
