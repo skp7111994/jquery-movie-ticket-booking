@@ -1,0 +1,417 @@
+{
+    "currentMovies": {
+        "data": [
+            {
+                "id": 1,
+                "name": "The Lion King",
+                "description": "A young lion cub named Simba must embrace his destiny as king of the Pride Lands and learn important life lessons along the way.",
+                "genre": [
+                    "Animation",
+                    "Adventure",
+                    "Drama"
+                ],
+                "rating": "PG",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "AMC Loews Cherry Hill 24",
+                        "location": "Cherry Hill, NJ",
+                        "showTimes": [
+                            "8:00am",
+                            "11:00am",
+                            "2:00pm",
+                            "5:00pm",
+                            "8:00pm",
+                            "11:00pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Donald Glover",
+                        "image": "https://m.media-amazon.com/images/M/MV5BZjNhYjYzMjEtZGQzNS00MjhkLTg0YmItZjRkZmQ2M2QxOGMzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY317_CR6,0,214,317_AL_.jpg",
+                        "role": "Simba"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Masterpiece Of A Generation",
+                        "description": "This movie is a must-see for all generations, as it's a timeless classic!",
+                        "user": "John Doe",
+                        "rating": "4"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Jaws",
+                "description": "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
+                "genre": [
+                    "Horror",
+                    "Thriller"
+                ],
+                "rating": "R",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Regal Cinemas Springfield Town Center 12",
+                        "location": "Springfield, VA",
+                        "showTimes": [
+                            "9:00am",
+                            "12:00pm",
+                            "3:00pm",
+                            "6:00pm",
+                            "9:00pm",
+                            "12:00am"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Roy Scheider",
+                        "image": "https://m.media-amazon.com/images/M/MV5BODQ3Mjk3NTU1M15BMl5BanBnXkFtZTcwNjUxNzE1MQ@@._V1_UY317_CR20,0,214,317_AL_.jpg",
+                        "role": "Chief Martin Brody"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Classic Horror Thriller",
+                        "description": "Jaws is an intense and thrilling horror movie that never fails to get the heart racing!",
+                        "user": "Jane Doe",
+                        "rating": "3"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "The Godfather",
+                "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+                "genre": [
+                    "Crime",
+                    "Drama"
+                ],
+                "rating": "R",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,704,1000_AL_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Cinemark at The Pike",
+                        "location": "Long Beach, CA",
+                        "showTimes": [
+                            "8:30am",
+                            "11:30am",
+                            "2:30pm",
+                            "5:30pm",
+                            "8:30pm",
+                            "11:30pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Marlon Brando",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjMwNDA4Nl5BMl5BanBnXkFtZTcwMTA5Mzg3OA@@._V1_UY317_CR3,0,214,317_AL_.jpg",
+                        "role": "Don Vito Corleone"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Timeless Classic",
+                        "description": "The Godfather is a must-see movie that stands the test of time as one of the greatest films of all time.",
+                        "user": "John Smith",
+                        "rating": "5"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "The Shawshank Redemption",
+                "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                "genre": [
+                    "Drama"
+                ],
+                "rating": "R",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51Sgz1RA8YL.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "AMC Loews Lincoln Square 13",
+                        "location": "New York, NY",
+                        "showTimes": [
+                            "7:00am",
+                            "10:00am",
+                            "1:00pm",
+                            "4:00pm",
+                            "7:00pm",
+                            "10:00pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Tim Robbins",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTI1OTYxNzAxOF5BMl5BanBnXkFtZTYwNTE5ODI4._V1_UY317_CR16,0,214,317_AL_.jpg",
+                        "role": "Andy Dufresne"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "An Inspiring Tale Of Redemption",
+                        "description": "The Shawshank Redemption is a heartwarming and inspiring story of hope and friendship.",
+                        "user": "Jane Smith",
+                        "rating": "4"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name": "The Dark Knight",
+                "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+                "genre": [
+                    "Action",
+                    "Crime",
+                    "Drama"
+                ],
+                "rating": "PG-13",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Regal Cinemas Atlantic Station 18",
+                        "location": "Atlanta, GA",
+                        "showTimes": [
+                            "7:30am",
+                            "10:30am",
+                            "1:30pm",
+                            "4:30pm",
+                            "7:30pm",
+                            "10:30pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Christian Bale",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTkxMzk4MjQ4Nl5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_UY317_CR16,0,214,317_AL_.jpg",
+                        "role": "Bruce Wayne/Batman"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "An Epic Tale Of Justice",
+                        "description": "The Dark Knight is an intense and thrilling action-packed film that will keep you on the edge of your seat!",
+                        "user": "John Johnson",
+                        "rating": "4"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Pulp Fiction",
+                "description": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+                "genre": [
+                    "Crime",
+                    "Drama"
+                ],
+                "rating": "R",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@._V1_SY1000_CR0,0,673,1000_AL_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Cinemark 18 and XD",
+                        "location": "Los Angeles, CA",
+                        "showTimes": [
+                            "8:15am",
+                            "11:15am",
+                            "2:15pm",
+                            "5:15pm",
+                            "8:15pm",
+                            "11:15pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "John Travolta",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTQyMTczMTAxMl5BMl5BanBnXkFtZTcwOTg2OTM2MQ@@._V1_UY317_CR22,0,214,317_AL_.jpg",
+                        "role": "Vincent Vega"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Masterpiece Of American Cinema",
+                        "description": "Pulp Fiction is an amazing and captivating film that is definitely worth watching!",
+                        "user": "Jane Johnson",
+                        "rating": "5"
+                    }
+                ]
+            }
+        ]
+    },
+    "upcomingMovies": {
+        "data": [
+            {
+                "id": 1,
+                "name": "Joker",
+                "description": "A failed stand-up comedian is driven insane and becomes a psychopathic murderer",
+                "genre": [
+                    "Thriller",
+                    "Drama",
+                    "Crime"
+                ],
+                "rating": "R",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71tU5UycdsL._SY879_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Cinema 9",
+                        "location": "New York, NY",
+                        "showTimes": [
+                            "09:00am",
+                            "11:00am",
+                            "01:00pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Joaquin Phoenix",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTUzODQ2NzQ2MV5BMl5BanBnXkFtZTgwOTQ2NDI2NjM@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg",
+                        "role": "The Joker"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "Dark and Disturbing",
+                        "description": "Joker is a disturbing look at the psychology of a man pushed to the brink. An amazing performance by Joaquin Phoenix.",
+                        "user": "Jane Doe",
+                        "rating": "9/10"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Frozen",
+                "description": "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land.",
+                "genre": [
+                    "Adventure",
+                    "Animation",
+                    "Family"
+                ],
+                "rating": "PG",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81zbSEXnDOL.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Cinema 10",
+                        "location": "Chicago, IL",
+                        "showTimes": [
+                            "09:00am",
+                            "11:00am",
+                            "01:00pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Kristen Bell",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTg3MzM3MDY3OV5BMl5BanBnXkFtZTgwNTA2NjMzMjE@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg",
+                        "role": "Anna"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Wonderful Sequel",
+                        "description": "Frozen II is a beautiful and touching sequel with a wonderful story and amazing animation. Highly recommended for all ages!",
+                        "user": "John Doe",
+                        "rating": "10/10"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Avengers: Endgame",
+                "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos.",
+                "genre": [
+                    "Action",
+                    "Adventure",
+                    "Sci-fi"
+                ],
+                "rating": "PG-13",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71RXFTfUC2L._SL1001_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Cinema 11",
+                        "location": "San Francisco, CA",
+                        "showTimes": [
+                            "08:00am",
+                            "10:00am",
+                            "12:00pm"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Robert Downey Jr.",
+                        "image": "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYyN15BMl5BanBnXkFtZTcwNTk0MTU0Mw@@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg",
+                        "role": "Iron Man"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Epic Conclusion",
+                        "description": "Avengers: Endgame is an epic conclusion to the Marvel Cinematic Universe with amazing action and a satisfying story. Highly recommended!",
+                        "user": "Jane Doe",
+                        "rating": "10/10"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Toy Story 4",
+                "description": "When a new toy called \"Forky\" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
+                "genre": [
+                    "Animation",
+                    "Adventure",
+                    "Comedy"
+                ],
+                "rating": "G",
+                "language": "English",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+                "nowRunningAt": [
+                    {
+                        "name": "Movie Theater 4",
+                        "location": "New York City",
+                        "showTimes": [
+                            "10:00AM",
+                            "12:00PM",
+                            "2:00PM",
+                            "4:00PM",
+                            "6:00PM",
+                            "8:00PM",
+                            "10:00PM"
+                        ]
+                    }
+                ],
+                "cast": [
+                    {
+                        "name": "Tom Hanks",
+                        "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjMwNDA0Nl5BMl5BanBnXkFtZTcwMTA2NDY3NQ@@._V1_UY317_CR16,0,214,317_AL_.jpg",
+                        "role": "Woody"
+                    }
+                ],
+                "reviews": [
+                    {
+                        "title": "A Heartwarming Adventure",
+                        "description": "Toy Story 4 is a heartfelt, funny, and adventurous movie that is sure to put a smile on your face.",
+                        "user": "Jane Doe",
+                        "rating": "5"
+                    }
+                ]
+            }
+        ]
+    }
+}

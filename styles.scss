@@ -1,0 +1,292 @@
+:root {
+  --primary: coral !important;
+}
+
+#main {
+  padding: 1rem;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.form-select {
+  width: auto !important;
+}
+
+button {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+.logo {
+  color: var(--primary);
+}
+
+.movie-card-width {
+  //width: 200px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.movie-card-width img {
+  height: 80%;
+}
+
+.movie-info {
+  margin: 0.8rem 0;
+}
+
+.movie-details {
+  display: flex;
+}
+
+.movie-details img {
+  width: 15rem;
+  /* height: 10rem; */
+}
+
+.review-card {
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+}
+
+.review-description {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+}
+
+.review-user {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.star-enabled {
+  color: #ffc700;
+}
+
+.star-disabled {
+  color: #ccc;
+}
+
+.cast-section,
+.movies-section,
+.book-tickets-btn {
+  margin: 1.5rem 0;
+}
+
+.cast-section img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.showtimes-section {
+  display: flex;
+  gap: 1rem;
+}
+
+time {
+  border: 1px solid lightgreen;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.badge {
+  margin-bottom: 1rem;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: flex-start;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+/* seat-selection */
+
+.ticket-section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.checkout-section {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.seat-row {
+  display: flex;
+}
+
+.seat {
+  border: 1px solid var(--primary);
+  background-color: #fff;
+  height: 0.8rem;
+  width: 1rem;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: var(--primary);
+  border-color: transparent;
+}
+
+.seat.occupied {
+  background-color: #eee;
+  border-color: transparent;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 1.2rem;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 1.2rem;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  width: 25%;
+  height: 4rem;
+  background: #fff;
+  border-radius: 0 0 100% 100%;
+  border: 0.5rem solid #fff;
+  border-top-width: 0;
+  border-bottom-color: lightblue;
+}
+
+.screen-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+
+/*-----carousel css starts here---------*/
+
+._slider {
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+
+  &:hover {
+  	._slider_next,
+  	._slider_prev {
+  		display: block;
+  	}
+
+  }
+  
+  &_next,
+  &_prev {
+    position: absolute;
+    top: 35%;
+    z-index: 999;
+    display: none;
+    width: auto;
+    height: auto;
+    padding: 2% 4%;
+    background: #d7d2d252;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2em;
+    opacity: 0.8;
+    cursor: pointer;
+    
+    &:hover {
+      opacity: 1;
+      -webkit-transition: all 0.2s ease;
+    }
+    
+  }
+
+  &_next {
+    right: 0;
+  }
+  
+  ul {
+    position: relative;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      float: left;
+      width: 300px;
+      /* text-align: center; */
+      margin: 0;
+      padding: 20px;
+      /* line-height: 200px; */
+      display: block;
+      position: relative;
+    }
+  }
+}
+
+ /* *******************************************
+  * END Slider
+  * */

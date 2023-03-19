@@ -1,15 +1,16 @@
 {
-  "name": "jquery-movie-ticket-booking",
+  "name": "movie-ticket-booking-app",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/skp7111994/jquery-movie-ticket-booking.git",
   "license": "MIT",
   "scripts": {
     "start": "yarn parcel ./index.html"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "jquery": "^3.6.4",
     "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3"
   }
 }
